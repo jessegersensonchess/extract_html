@@ -35,7 +35,7 @@ import (
 	"extract_html/internal/extracthtml"
 )
 
-var version = "v0.0.1" // Default version
+var version = "v0.0.1" // Default version number
 
 func main() {
 	if len(os.Args) > 1 && os.Args[1] == "version" {
