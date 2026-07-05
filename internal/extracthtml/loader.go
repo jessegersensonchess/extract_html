@@ -59,7 +59,7 @@ func (l *Loader) Load(ctx context.Context, input Input) (string, error) {
 	if err != nil {
 		return "", fmt.Errorf("new request: %w", err)
 	}
-	req.Header.Set("User-Agent", "extract-html/1.0")
+	req.Header.Set("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
 
 	resp, err := l.client.Do(req)
 	if err != nil {
